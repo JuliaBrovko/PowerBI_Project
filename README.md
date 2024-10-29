@@ -1,17 +1,24 @@
-About Dataset
-Context
-Welcome to the shopping world of Istanbul! Our dataset contains shopping information from 10 different shopping malls between 2021 and 2023. We have gathered data from various age groups and genders to provide a comprehensive view of shopping habits in Istanbul. The dataset includes essential information such as invoice numbers, customer IDs, age, gender, payment methods, product categories, quantity, price, order dates, and shopping mall locations. We hope that this dataset will serve as a valuable resource for researchers, data analysts, and machine learning enthusiasts who want to gain insights into shopping trends and patterns in Istanbul. Explore the dataset and discover the fascinating world of Istanbul shopping!
+Этапы создания дашборда:
+- Загрузка данных 
+- Очистка и преобразование типов, проверка на пропуски и дубли
+- Расчет доп. столбца (revenue)
+- Расчет ключевых метрик (создание мер)
+- Построение графиков, дизайн дашборда
 
-Content
-Attribute Information:
 
-invoice_no: Invoice number. Nominal. A combination of the letter 'I' and a 6-digit integer uniquely assigned to each operation.
-customer_id: Customer number. Nominal. A combination of the letter 'C' and a 6-digit integer uniquely assigned to each operation.
-gender: String variable of the customer's gender.
-age: Positive Integer variable of the customers age.
-category: String variable of the category of the purchased product.
-quantity: The quantities of each product (item) per transaction. Numeric.
-price: Unit price. Numeric. Product price per unit in Turkish Liras (TL).
-payment_method: String variable of the payment method (cash, credit card or debit card) used for the transaction.
-invoice_date: Invoice date. The day when a transaction was generated.
-shopping_mall: String variable of the name of the shopping mall where the transaction was made.
+Набор данных содержит информацию о покупках в 10 различных торговых центрах в период с 2021 по 2023 год. 
+
+Содержание датасета
+
+Информация о параметрах:
+
+invoice_no: Номер счета. Номинативный. Комбинация буквы 'I' и 6-значного числа, уникально присваиваемая каждой операции.
+customer_id: Номер клиента. Номинативный. Комбинация буквы 'C' и 6-значного числа, уникально присваиваемая каждому клиенту.
+gender: Строковая переменная, обозначающая пол клиента.
+age: Положительное целое число, обозначающее возраст клиента.
+category: Строковая переменная, обозначающая категорию приобретенного товара.
+quantity: Количество каждого товара (предмета) за одну транзакцию. Числовое значение.
+price: Цена за единицу товара. Числовое значение, указывающее цену товара в турецких лирах (TL).
+payment_method: Строковая переменная, обозначающая способ оплаты (наличные, кредитная карта или дебетовая карта), использованный для транзакции.
+invoice_date: Дата счета. День, когда была произведена транзакция.
+shopping_mall: Строковая переменная, обозначающая название торгового центра, в котором была совершена покупка.
